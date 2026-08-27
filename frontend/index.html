@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VidMentor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main Application -->
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-icon">▶</span>
+                    <span>VidMentor</span>
+                </div>
+
+                <button class="new-chat-btn" id="newChatBtn">
+                    <span>＋</span>
+                    New Chat
+                </button>
+            </div>
+
+
+            <div class="sidebar-section">
+                <p class="section-title">Your Assistant</p>
+
+                <div class="info-card">
+                    <div class="info-icon">🎓</div>
+
+                    <div>
+                        <h3>AI Teaching Assistant</h3>
+                        <p>
+                            Find topics across your lecture videos
+                            with exact timestamps.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sidebar-bottom">
+
+                <div class="status">
+                    <span class="status-dot"></span>
+                    <span>Local AI System</span>
+                </div>
+
+                <p class="version">
+                    VidMentor v1.0
+                </p>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main Chat Area -->
+        <main class="chat-container">
+
+            <!-- Header -->
+            <header class="chat-header">
+
+                <div>
+                    <h1>VidMentor</h1>
+                    <p>AI Teaching Assistant for your lectures</p>
+                </div>
+
+                <div class="header-status">
+                    <span class="status-dot"></span>
+                    Online
+                </div>
+
+            </header>
+
+
+            <!-- Chat Messages -->
+            <section class="chat-area" id="chatArea">
+
+                <!-- Welcome Screen -->
+                <div class="welcome-screen" id="welcomeScreen">
+
+                    <div class="welcome-icon">
+                        🎓
+                    </div>
+
+                    <h2>
+                        What would you like to learn today?
+                    </h2>
+
+                    <p>
+                        Ask me where a topic is explained in your
+                        lecture videos.
+                    </p>
+
+
+                    <!-- Example Questions -->
+                    <div class="suggestions">
+
+                        <button class="suggestion"
+                                data-question="Where is line clipping explained?">
+
+                            <span>📍</span>
+
+                            <div>
+                                <strong>Find a topic</strong>
+                                <small>
+                                    Where is line clipping explained?
+                                </small>
+                            </div>
+
+                        </button>
+
+
+                        <button class="suggestion"
+                                data-question="Where is transformation explained?">
+
+                            <span>🔍</span>
+
+                            <div>
+                                <strong>Locate a concept</strong>
+                                <small>
+                                    Where is transformation explained?
+                                </small>
+                            </div>
+
+                        </button>
+
+
+                        <button class="suggestion"
+                                data-question="Where is Bezier curve explained?">
+
+                            <span>📚</span>
+
+                            <div>
+                                <strong>Explore lectures</strong>
+                                <small>
+                                    Where is Bezier curve explained?
+                                </small>
+                            </div>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Input Area -->
+            <div class="input-section">
+
+                <form class="chat-form" id="chatForm">
+
+                    <div class="input-wrapper">
+
+                        <textarea
+                            id="messageInput"
+                            placeholder="Ask anything about your lectures..."
+                            rows="1"
+                            autocomplete="off"
+                        ></textarea>
+
+                        <button
+                            type="submit"
+                            class="send-btn"
+                            id="sendBtn"
+                            aria-label="Send message"
+                        >
+                            <span>➤</span>
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <p class="input-disclaimer">
+                    VidMentor answers based on your provided lecture content.
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
